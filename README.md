@@ -30,3 +30,7 @@ Open a terminal in the project folder and run:
 ```bash
 javac ChatServer.java
 java ChatServer
+## 📷 Output Screenshot
+Here is the application running with one server and two clients:
+
+![Chat Application Demo](output.png)
