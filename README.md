@@ -19,18 +19,3 @@ This project is a CLI (Command Line Interface) based chat application developed 
 2.  **Clients** connect to the server using TCP/IP.
 3.  The server spawns a new **Thread** for each client to handle multiple users simultaneously.
 4.  Messages sent by one user are **broadcasted** to all other connected users.
-
-## 💻 How to Run the Project
-
-### Prerequisite
-Ensure you have Java installed. You can check by running `java -version` in your terminal.
-
-### Step 1: Start the Server
-Open a terminal in the project folder and run:
-```bash
-javac ChatServer.java
-java ChatServer
-## 📷 Output Screenshot
-Here is the application running with one server and two clients:
-
-![Chat Application Demo](output.png)
