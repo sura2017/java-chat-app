@@ -1,24 +1,43 @@
-# Real-Time Multi-User Chat Application
+          Java Real-Time GUI Chat Application
 
-## 📌 Project Overview
-This project is a CLI (Command Line Interface) based chat application developed in **Java**. It utilizes the **Client-Server Architecture** to allow multiple users to connect to a centralized server and exchange messages in real-time. The application is built using Java’s networking libraries (`java.net`) and handles concurrent users using **Multithreading**.
+            Project Overview
+This is a **Graphical User Interface (GUI)** based Chat Application developed in Java. It enables real-time messaging between multiple users through a centralized server. Unlike basic command-line chat apps, this project features a modern **Swing Interface** for both the server dashboard and the client chat window.
 
-## 🚀 Key Technologies Used
+The system uses **Java Sockets** for networking, **Multithreading** for handling concurrent users, and **Java Swing** for the visual interface.
+
+##  Key Features
+### Server Dashboard
+*   **Visual Control:** Start and Stop the server with simple buttons.
+*   **Live Logs:** View real-time server events (connections, disconnections, errors).
+*   **Active Users:** A dynamic list showing who is currently online.
+
+###   Client Application
+*   **User-Friendly Interface:** Clean design with a chat history area and message input.
+*   **Connection Management:** Connect and disconnect easily with a username.
+*   **Real-Time Updates:** Messages appear instantly for all connected users.
+
+##  Technologies Used
 *   **Language:** Java (JDK 17+)
-*   **Networking:** Java Sockets (`Socket`, `ServerSocket`)
-*   **Concurrency:** Java Threads (`Thread`, `Runnable`)
-*   **I/O Handling:** `BufferedReader` and `PrintWriter`
-*   **IDE:** Visual Studio Code
+*   **GUI Framework:** Java Swing (`javax.swing`)
+*   **Networking:** TCP/IP Sockets (`java.net`)
+*   **Concurrency:** Multithreading (`Thread`, `Runnable`)
+*   **Architecture:** Client-Server Model
 
-## 📂 Project Structure
-*   `ChatServer.java`: The centralized server that listens for connections and broadcasts messages.
-*   `ChatClient.java`: The client application that allows users to send and receive messages.
+---
 
-## ⚙️ How It Works
-1.  **The Server** starts on port `12345` and waits for connections.
-2.  **Clients** connect to the server using TCP/IP.
-3.  The server spawns a new **Thread** for each client to handle multiple users simultaneously.
-4.  Messages sent by one user are **broadcasted** to all other connected users.
-## 📷 Output Screenshot
+## Project Structure
+The project is organized into a package `com.chat` to follow Java best practices:
 
-![Chat Application Demo](output.png)
+```text
+JavaChatApp/
+├── com/
+│   └── chat/
+│       ├── ChatServer.java      # The GUI Server Dashboard
+│       ├── ChatClient.java      # The GUI Client Application
+│       └── ClientHandler.java   # Handles individual client threads
+├── README.md                    # Project Documentation
+└── output.png 
+        
+Output Screenshot
+Below is the application running with the Server Dashboard and two Clients (Sura and Beka) connected simultaneously:
+![alt text](output.png)
