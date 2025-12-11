@@ -38,6 +38,7 @@ JavaChatApp/
 ├── README.md                    # Project Documentation
 └── output.png 
         
-Output Screenshot
+## 📷 Output Screenshot
 Below is the application running with the Server Dashboard and two Clients (Sura and Beka) connected simultaneously:
+
 ![alt text](output.png)
