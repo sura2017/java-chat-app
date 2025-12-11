@@ -36,9 +36,8 @@ JavaChatApp/
 │       ├── ChatClient.java      # The GUI Client Application
 │       └── ClientHandler.java   # Handles individual client threads
 ├── README.md                    # Project Documentation
-└── output.png 
-        
-## 📷 Output Screenshot
-Below is the application running with the Server Dashboard and two Clients (Sura and Beka) connected simultaneously:
+└── output.png
 
-![alt text](output.png)
+## ScreenShoot of chatapp that i built was exist in the Output.png.
+       
+
